@@ -1,0 +1,41 @@
+.slides{
+  border: 1px solid #55f;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: auto;
+  width: auto;
+}
+.slide{
+  border: 1px solid #f88;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
+.image-box{
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  margin: 5% 5% 5% 5%;
+
+  top: 0%;
+  left: 0%;
+}
+.image-box img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.text-box{
+  border: 1px solid #3f8;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 10vh;
+}
+.text-box.top{}
+.text-box.middle{}
+.text-box.bottom{}

@@ -1,0 +1,18 @@
+<div class='slides'>
+  {% for item in site.data.index.slides %}
+  <div class='slide' style="display: none;"  data-background-argb="{{item.background_color}}">
+    <div class='image-box'>
+      <img src="/assets/img/{{item.background_image}}">
+    </div>
+    <div class='text-box top' style="color: {{item.text_color}};">
+      <p>{{ item.top }}</p>
+    </div>
+    <div class='text-box middle' style="color: {{item.text_color}};">
+      <p>{{ item.middle }}</p>
+    </div>
+    <div class='text-box bottom' style="color: {{item.text_color}};">
+      <p>{{ item.bottom }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
