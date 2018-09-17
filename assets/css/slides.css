@@ -1,15 +1,14 @@
+body{
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
 .slides{
-  border: 1px solid #55f;
   position: absolute;
   top: 0px;
-  bottom: 0px;
   left: 0px;
-  right: 0px;
-  height: auto;
-  width: auto;
+  height: 100vh;
+  width: 100vw;
 }
 .slide{
-  border: 1px solid #f88;
   top: 0%;
   left: 0%;
   height: 100%;
@@ -17,12 +16,13 @@
 }
 .image-box{
   position: absolute;
-  height: 90%;
-  width: 90%;
-  margin: 5% 5% 5% 5%;
-
+  height: auto;
+  width: auto;
+  margin: 10% 5% 10% 5%;
   top: 0%;
+  bottom: 0%;
   left: 0%;
+  right: 0%;
 }
 .image-box img{
   height: 100%;
@@ -30,12 +30,18 @@
   object-fit: contain;
 }
 .text-box{
-  border: 1px solid #3f8;
   position: absolute;
   width: 100%;
   text-align: center;
-  font-size: 10vh;
+  font-size: 8vh;
+  text-shadow: 2px 2px 5px #ffffff;
 }
-.text-box.top{}
-.text-box.middle{}
-.text-box.bottom{}
+.text-box.top{
+      top: 5%;
+}
+.text-box.middle{
+  top: 50%;
+}
+.text-box.bottom{
+      bottom: 5%;
+}
