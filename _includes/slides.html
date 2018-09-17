@@ -1,16 +1,16 @@
 <div class='slides'>
   {% for item in site.data.index.slides %}
-  <div class='slide' style="display: none;"  data-background-argb="{{item.background_color}}">
+  <div class='slide text-color-{{item.text_color}}' style="display: none; background-color:{{item.background_color}}">
     <div class='image-box'>
       <img src="{{site.baseurl}}/assets/img/{{item.background_image}}">
     </div>
-    <div class='text-box top' style="color: {{item.text_color}};">
+    <div class='text-box top'>
       {{ item.top }}
     </div>
-    <div class='text-box middle' style="color: {{item.text_color}};">
+    <div class='text-box middle'>
       {{ item.middle }}
     </div>
-    <div class='text-box bottom' style="color: {{item.text_color}};">
+    <div class='text-box bottom'>
       {{ item.bottom }}
     </div>
   </div>
