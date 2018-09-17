@@ -89,7 +89,7 @@ previous_slide = function (){
 }
 
 exit_show = function (){
-  window.location.href = window.site_url
+  window.location.href = window.site_url+window.site_base_url+'/index'
 }
 
 toggle_black = function (){

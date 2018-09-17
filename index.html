@@ -2,4 +2,36 @@
 layout: main
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+
+<div class='row'>
+    <div class='col col-md-12'>
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to Presentation Karaoke!</h1>
+      <p class="lead">Present a talk with some of the worst slides you've never seen before, showing up in random order.</p>
+    </div>
+  </div>
+</div>
+<div class='row'>
+  <div class='col col-md-8 col-md-offset-2' >
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Start The Show</h5>
+        <p class="card-text">Click the buttons below to start...</p>
+        <p class="card-text">Rules: Give a great talk! You can't choose the slides, they are in random order, they are terrible, you can't complain.</p>
+        <p class="card-text">
+          <strong>Keyboard Controls:</strong>
+          <br>
+          - arrows keys: prev/next slide
+          <br>
+          - "b" key: blank out screen
+          <br>
+          - "p" key: toggle autoplay mode
+          <br>
+          - esc key: end the presentation
+        </p>
+        <a href="{{site.baseurl}}/show#autoplay" class="btn btn-primary">Start, with autoplay</a>
+        <a href="{{site.baseurl}}/show" class="btn btn-primary">Start, with manual controls</a>
+      </div>
+    </div>
+  </div>
+</div>
