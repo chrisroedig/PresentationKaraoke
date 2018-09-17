@@ -11,4 +11,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-baseurl: ""
