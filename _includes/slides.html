@@ -2,7 +2,7 @@
   {% for item in site.data.index.slides %}
   <div class='slide' style="display: none;"  data-background-argb="{{item.background_color}}">
     <div class='image-box'>
-      <img src="/assets/img/{{item.background_image}}">
+      <img src="{{site.baseurl}}/assets/img/{{item.background_image}}">
     </div>
     <div class='text-box top' style="color: {{item.text_color}};">
       <p>{{ item.top }}</p>
