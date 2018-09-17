@@ -8,6 +8,12 @@ body{
   height: 100vh;
   width: 100vw;
 }
+.slides.presentation-black{
+  background: #000;
+}
+.slides.presentation-black *{
+  display: none;
+}
 .slide{
   top: 0%;
   left: 0%;
