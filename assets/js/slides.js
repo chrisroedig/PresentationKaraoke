@@ -33,9 +33,9 @@ start_show = function(){
   console.log('starting show...')
   window.show_end_time = new Date();
   window.show_end_time.setMinutes(window.show_end_time.getMinutes() + 1);
-  window.show_playing = true;
   show_intro_slide()
   build_rundown()
+  window.show_playing = true;
   next_slide_timed()
 }
 
