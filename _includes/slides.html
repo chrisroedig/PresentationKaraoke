@@ -1,17 +1,39 @@
 <div class='slides'>
+  <div class='slide text-color-white intro-slide' style="display: none; background-color: black">
+    <div class='text-box top'>
+      A Talk about...
+    </div>
+    <div class='text-box middle topic'>
+      Something Awesome
+    </div>
+    <div class='text-box bottom presenter'>
+      by: Your Talented Speaker
+    </div>
+  </div>
+  <div class='slide text-color-white thankyou-slide' style="display: none; background-color: black">
+    <div class='text-box top'>
+      The End
+    </div>
+    <div class='text-box middle'>
+      Thank You!
+    </div>
+    <div class='text-box bottom'>
+      Questions?
+    </div>
+  </div>
   {% for item in site.data.index.slides %}
-  <div class='slide' style="display: none;"  data-background-argb="{{item.background_color}}">
+  <div class='slide text-color-{{item.text_color}} presentation-slide' style="display: none; background-color:{{item.background_color}}">
     <div class='image-box'>
-      <img src="/assets/img/{{item.background_image}}">
+      <img src="{{site.baseurl}}/assets/img/{{item.background_image}}">
     </div>
-    <div class='text-box top' style="color: {{item.text_color}};">
-      <p>{{ item.top }}</p>
+    <div class='text-box top'>
+      {{ item.top }}
     </div>
-    <div class='text-box middle' style="color: {{item.text_color}};">
-      <p>{{ item.middle }}</p>
+    <div class='text-box middle'>
+      {{ item.middle }}
     </div>
-    <div class='text-box bottom' style="color: {{item.text_color}};">
-      <p>{{ item.bottom }}</p>
+    <div class='text-box bottom'>
+      {{ item.bottom }}
     </div>
   </div>
   {% endfor %}

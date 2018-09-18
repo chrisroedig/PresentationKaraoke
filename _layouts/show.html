@@ -2,18 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/slides.css">
 
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/slides.css">
-
-    <script type="text/javascript" src="/assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/assets/js/slides.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/underscore-min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/slides.js"></script>
+    <script type="text/javascript">
+      window.site_url = "{{site.url}}"
+      window.site_base_url = "{{site.baseurl}}"
+    </script>
   </head>
   <body>
-    <div class="container">
     {{ content }}
-    </div>
   </body>
 </html>

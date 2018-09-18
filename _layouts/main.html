@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/bootstrap.min.css">
+    <script type="text/javascript" src="{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <div class='container'>
     {{ content }}
+    </div>
   </body>
 </html>
