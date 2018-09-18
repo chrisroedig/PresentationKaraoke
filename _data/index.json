@@ -580,17 +580,7 @@
         "background_image": "size_matters.jpg"
     },
     {
-<<<<<<< Updated upstream
-        "middle": "Does this belong here?",
-        "text_color": "white",
         "background_color": "#FFFFFF",
-        "background_image": "beer_ad.jpg"
-    },
-    {
-        "background_color": "#FFFFFF",
-=======
-        "background_color": "#FFFFFFFF",
->>>>>>> Stashed changes
         "background_image": "more.png"
     },
     {
