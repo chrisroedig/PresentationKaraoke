@@ -1,9 +1,9 @@
 title: Presentation Karaoke
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Grab 6-200 of your closest friends and present random topics
   to the worst and most random slides ever created.
   Fun, and you just might learn something.
-baseurl: "/presentation_karaoke" # the subpath of your site, e.g. /blog
+baseurl: "/pages/croedig/presentation_karaoke"
 
 markdown: kramdown
 gems:
