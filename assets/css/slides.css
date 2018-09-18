@@ -61,3 +61,14 @@ body{
 .text-box.bottom{
       bottom: 5%;
 }
+
+.intro-slide .text-box.top, .thankyou-slide .text-box.top{
+      top: 20%;
+}
+.intro-slide .text-box.middle, .thankyou-slide .text-box.middle{
+  top: 40%;
+  font-size: 14vh;
+}
+.intro-slide .text-box.bottom, .thankyou-slide .text-box.bottom{
+      bottom: 20%;
+}

@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  build_rundown()
-  show_slide(window.current_slide_index)
   window.show_playing = false
   if(window.location.hash == '#autoplay'){
     start_show()
@@ -31,13 +29,32 @@ $(document).keyup(function(e){
   }
 })
 
-var start_show = function(){
+start_show = function(){
   console.log('starting show...')
+  window.show_end_time = new Date();
+  window.show_end_time.setMinutes(window.show_end_time.getMinutes() + 1);
   window.show_playing = true;
+  show_intro_slide()
+  build_rundown()
   next_slide_timed()
 }
 
-var pause_show = function(){
+next_slide_timed = function(delay){
+  if( typeof delay === "undefined"){
+    var delay = 10000
+  }
+  console.log('delay is '+delay)
+  setTimeout(function(){
+    if(window.show_playing == false){
+      return;
+    }
+    console.log('showing next slide')
+    next_slide();
+    next_slide_timed();
+  },delay)
+}
+
+pause_show = function(){
 
   if(window.show_playing == false){
     start_show()
@@ -47,25 +64,17 @@ var pause_show = function(){
   }
 }
 
-var next_slide_timed = function(){
-  setTimeout(function(){
-    if(window.show_playing == false){
-      return;
-    }
-    console.log('showing next slide')
-    next_slide();
-    next_slide_timed();
-  },10000)
-}
 
-var build_rundown = function(){
-  window.slides = _.shuffle($('.slide'))
+
+build_rundown = function(){
+  window.slides = _.shuffle($('.presentation-slide'))
   window.current_slide_index = 0
   window.isblack = false
+  window.show_playing = false
   window.last_slide_index = window.slides.length-1
 }
 
-var show_slide = function(index){
+show_slide = function(index){
   if(window.isblack == true){
     return;
   }
@@ -89,7 +98,8 @@ previous_slide = function (){
 }
 
 exit_show = function (){
-  window.location.href = window.site_url+window.site_base_url+'/index'
+  pause_show()
+  show_thankyou_slide()
 }
 
 toggle_black = function (){
@@ -99,4 +109,13 @@ toggle_black = function (){
     $('.slides').addClass('presentation-black')
   }
   window.isblack = !window.isblack
+}
+
+show_intro_slide = function(){
+  $('.slide').hide()
+  $('.intro-slide').show()
+}
+show_thankyou_slide = function(){
+  $('.slide').hide()
+  $('.thankyou-slide').show()
 }
