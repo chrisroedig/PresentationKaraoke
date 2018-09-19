@@ -242,7 +242,7 @@
         "background_image": "modified_spiral.png"
     },
     {
-        "bottom":"Teams win, not leaders",
+        "bottom":"Teams win, not just leaders",
         "text_color": "white",
         "background_color": "#FFFFFF",
         "background_image": "my_name_is_irrelevant.png"
@@ -287,7 +287,7 @@
         "background_image": "responsive_org.jpg"
     },
     {
-        "top":"How teams grow",
+        "top":"There are many lines in this diagram",
         "text_color": "black",
         "background_color": "#FFFFFF",
         "background_image": "stages_of_proficiency.png"
@@ -311,19 +311,19 @@
         "background_image": "thirst.jpeg"
     },
     {
-        "top":"Incremental value",
-        "text_color": "black",
+        "middle":"Incremental value",
+        "text_color": "white",
         "background_color": "#FFFFFF",
         "background_image": "value.jpg"
     },
     {
-        "middle":"Organizing for trust, joy, and RESULTS",
+        "middle":"Team Organization, Organically!",
         "text_color": "white",
         "background_color": "#000000",
         "background_image": "valve_org_charts.png"
     },
     {
-        "top":"Focusing on efficiency",
+        "top":"Death by Detail",
         "bottom": "causes risk to cascade",
         "text_color": "black",
         "background_color": "#FFFFFF",
@@ -775,10 +775,6 @@
         "background_image": "inside_hostile.png"
     },
     {
-        "background_color": "#FFFFFF",
-        "background_image": "pain_of_regret.jpg"
-    },
-    {
         "bottom": "Mass customization",
         "text_color": "white",
         "background_color": "#FFFFFF",
@@ -875,12 +871,6 @@
         "background_image": "baby_butt.png"
     },
     {
-        "top": "Sea of uncertainty",
-        "text_color": "white",
-        "background_color": "#FFFFFF",
-        "background_image": "sea_of_uncertainty.png"
-    },
-    {
         "bottom": "People overselect for risk",
         "text_color": "white",
         "background_color": "#FFFFFF",
@@ -949,6 +939,78 @@
         "text_color": "white",
         "background_color": "#000000",
         "background_image": "factory.png"
+    },
+    {
+        "bottom": "INSERT TEXT HERE",
+        "text_color": "{white/black}",
+        "background_color": "#000000/#ffffff",
+        "background_image": "file.name"
+    },
+    {
+        "bottom": "Quadrilation of Success",
+        "text_color": "black",
+        "background_color": "#000000",
+        "background_image": "img267.png"
+    },
+    {
+        "bottom": "INSERT TEXT HERE",
+        "text_color": "{white/black}",
+        "background_color": "#000000/#ffffff",
+        "background_image": "file.name"
+    },
+    {
+        "top": "Team Dynamics During Mergers and Acquisitions",
+        "text_color": "black",
+        "background_color": "#000000",
+        "background_image": "image241.png"
+    },
+    {
+        "middle": "All Features are not Good Features",
+        "text_color": "white",
+        "background_color": "#ffffff",
+        "background_image": "image244.png"
+    },
+    {
+        "bottom": "Empathetic Despotism, by Jack Rust",
+        "text_color": "white",
+        "background_color": "#000000",
+        "background_image": "image262.png"
+    },
+    {
+        "bottom": "We are Problem Solvers",
+        "text_color": "white",
+        "background_color": "#ffffff",
+        "background_image": "image284.jpeg"
+    },
+    {
+        "background_color": "#000000",
+        "background_image": "image291.png"
+    },
+    {
+        "background_color": "#ffffff",
+        "background_image": "image297.png"
+    },
+    {
+        "top": "All of the People",
+        "text_color": "black",
+        "background_color": "#000000",
+        "background_image": "image218.png"
+    },
+    {
+        "bottom": "The Triple Constraint of Agile Presentations",
+        "text_color": "black",
+        "background_color": "#000000",
+        "background_image": "image233.png"
+    },
+    {
+        "bottom": "Take the First Jump",
+        "text_color": "black",
+        "background_color": "#000000",
+        "background_image": "tortoise_catch.jpg"
+    },
+    {
+        "background_color": "#ffffff",
+        "background_image": "image337.jpg"
     },
     {
         "background_color": "#FFFFFF",
