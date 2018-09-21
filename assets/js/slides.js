@@ -20,7 +20,10 @@ $(document).keyup(function(e){
       toggle_black();
     break;
     case 80:
-      pause_show();
+      start_show();
+    break;
+    case 70:
+      toggleFullScreen()
     break;
     default:
       console.log(e.which)
@@ -100,6 +103,9 @@ previous_slide = function (){
 exit_show = function (){
   pause_show()
   show_thankyou_slide()
+  setTimeout(function(){
+    $('.slide').hide()
+  },10000)
 }
 
 toggle_black = function (){

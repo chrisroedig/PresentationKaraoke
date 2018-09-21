@@ -1,5 +1,6 @@
 body{
   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background: #000;
 }
 .slides{
   position: absolute;
@@ -7,9 +8,10 @@ body{
   left: 0px;
   height: 100vh;
   width: 100vw;
+  background: #000;
 }
 .slides.presentation-black{
-  background: #000;
+
 }
 .slides.presentation-black *{
   display: none;
